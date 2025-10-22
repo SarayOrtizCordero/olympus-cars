@@ -1,0 +1,58 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "categoria": "lanzamiento",
+      "titulo": "Nuevo Lamborghini Huracán Tecnica disponible en Olympus Cars",
+      "descripcion": "El esperado Lamborghini Huracán Tecnica llega a nuestro showroom. Una obra maestra de ingeniería italiana con 640 CV y diseño aerodinámico avanzado.",
+      "imagen": "./assets/images/coche-1.jpeg",
+      "fecha": "2025-10-15",
+      "enlace": "./views/galeria.html"
+    },
+    {
+      "id": 2,
+      "categoria": "evento",
+      "titulo": "Test Drive Exclusivo: Prueba los nuevos modelos deportivos",
+      "descripcion": "Te invitamos a nuestro evento exclusivo de test drive. Experimenta la potencia del Porsche 911 Turbo S y el Mercedes-AMG GT Black Series en circuito cerrado.",
+      "imagen": "./assets/images/coche-2.jpeg",
+      "fecha": "2025-10-20",
+      "enlace": "./views/contacto.html"
+    },
+    {
+      "id": 3,
+      "categoria": "noticia",
+      "titulo": "El mercado de vehículos de lujo crece un 23% en Madrid",
+      "descripcion": "Según el último informe del sector, la demanda de vehículos premium en la Comunidad de Madrid ha experimentado un crecimiento récord este año.",
+      "imagen": "./assets/images/coche-3.jpeg",
+      "fecha": "2025-10-10",
+      "enlace": "./views/galeria.html"
+    },
+    {
+      "id": 4,
+      "categoria": "lanzamiento",
+      "titulo": "Ferrari SF90 Stradale: El híbrido más potente de la historia",
+      "descripcion": "Descubre el primer híbrido enchufable de Ferrari con 1.000 CV. Tecnología de Fórmula 1 adaptada a la carretera. Reserva tu cita para verlo en exclusiva.",
+      "imagen": "./assets/images/coche-4.jpeg",
+      "fecha": "2025-10-08",
+      "enlace": "./views/presupuesto.html"
+    },
+    {
+      "id": 5,
+      "categoria": "evento",
+      "titulo": "Inauguración de nuestro nuevo Showroom Premium",
+      "descripcion": "Olympus Cars estrena sus nuevas instalaciones en el corazón de Madrid. Un espacio de 2.000 m² dedicado a la excelencia automotriz con zona VIP y cafetería exclusiva.",
+      "imagen": "./assets/images/coche-5.jpeg",
+      "fecha": "2025-10-05",
+      "enlace": "./views/contacto.html"
+    },
+    {
+      "id": 6,
+      "categoria": "noticia",
+      "titulo": "Tendencias 2025: Los SUV de lujo dominan el mercado",
+      "descripcion": "El Bentley Bentayga, Rolls-Royce Cullinan y Lamborghini Urus lideran las preferencias de los clientes premium en España.",
+      "imagen": "./assets/images/coche-6.jpeg",
+      "fecha": "2025-10-01",
+      "enlace": "./views/galeria.html"
+    }
+  ]
+}
