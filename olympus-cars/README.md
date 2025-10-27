@@ -38,7 +38,7 @@ La aplicación implementa un diseño responsivo con una paleta de colores sofist
 ## Estructura del Proyecto
 
 ```
-saray_ortiz_trabajoJAVASCRIPT_01/
+olympus-cars/
 │
 ├── index.html                 # Página principal
 ├── olympus-cars.ico          # Favicon
@@ -79,12 +79,12 @@ saray_ortiz_trabajoJAVASCRIPT_01/
 
 1. Clonar o descargar el repositorio en su máquina local:
    ```bash
-   git clone [URL_DEL_REPOSITORIO]
+   git clone https://github.com/SarayOrtizCordero/olympus-cars
    ```
 
 2. Navegar al directorio del proyecto:
    ```bash
-   cd saray_ortiz_trabajoJAVASCRIPT_01
+   cd olympus-cars
    ```
 
 3. Abrir el archivo `index.html` en un navegador web, o bien, iniciar un servidor local:
@@ -333,9 +333,8 @@ Desarrollado por Saray Ortiz como trabajo práctico de JavaScript.
 
 Para consultas o soporte relacionado con el proyecto:
 
-- Email: [correo de contacto]
-- Teléfono: +34 955 786 544 (Olympus Cars)
-- Ubicación: Calle de la Luna, 12, 28004 Madrid, España
+- Email: sarayortizcordero4@gmail.com
+- Teléfono: +34 675 84 36 55
 
 ## Changelog
 
@@ -359,3 +358,4 @@ Para consultas o soporte relacionado con el proyecto:
 ---
 
 **Última actualización**: 22 de octubre de 2025
+
