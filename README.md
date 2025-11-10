@@ -171,25 +171,21 @@ const BUSINESS_PHONE = "+34 955 786 544";
 - Archivos optimizados para producción
 - Librerías servidas desde CDN
 
-## Contacto
-
-**Olympus Cars**
-
-- Teléfono: +34 955 786 544
-- Dirección: Calle de la Luna, 12, 28004 Madrid, España
-- WhatsApp: Disponible en el sitio web
-
 ## Licencia
 
-© 2025 Saray Ortiz Cordero. Todos los derechos reservados.
+Este proyecto es parte de un portafolio. El código está disponible para propósitos de aprendizaje y demostración.
 
-Este proyecto es de código abierto y está disponible bajo la Licencia MIT para fines educativos y de portfolio personal.
+**Nota Legal**: Los nombres, logotipos e imágenes de videojuegos son propiedad de sus respectivos titulares y se utilizan únicamente con fines educativos y de demostración.
 
 ## Autor
 
-**Saray Ortiz Cordero**  
-Programadora Full-Stack Junior
+**Saray Ortiz Cordero**
+
+Proyecto desarrollado como parte del aprendizaje en desarrollo web frontend, demostrando competencias en HTML5, CSS3, diseño responsivo, accesibilidad web y mejores prácticas de desarrollo.
 
 ---
 
-**Última actualización:** Octubre 2025
+**Versión**: 1.0.0  
+**Última actualización**: Octubre 2025  
+**Estado del proyecto**: Activo - En desarrollo continuo
+
