@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Olympus Cars - Concesionario de vehículos de lujo en Madrid. Visítanos en Calle de la Luna o contáctanos por teléfono.">
+    <meta name="keywords" content="contacto olympus cars, concesionario madrid, vehículos lujo contacto, dirección olympus cars">
+    <title>Contacto - Olympus Cars | Concesionario de Lujo en Madrid</title>
+    <link rel="icon" href="../olympus-cars.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-gem"></i>
+                <span class="logo-text">OLYMPUS CARS</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="./presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li><a href="#" class="nav-link active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO PEQUEÑO -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Contacto</h1>
+            <p class="hero-description">Estamos aquí para atenderte</p>
+            <div class="hero-divider"></div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Información de Contacto -->
+            <section class="contact-info-section">
+                <div class="section-header">
+                    <h2 class="section-title">¿Cómo Contactarnos?</h2>
+                    <p class="section-description">Visítanos, llámanos o escríbenos. Estamos para ayudarte a encontrar tu vehículo ideal.</p>
+                </div>
+
+                <div class="contact-cards">
+                    <!-- Teléfono -->
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Teléfono</h3>
+                        <p class="contact-detail">
+                            <a href="tel:+34955786544" class="contact-link">+34 955 786 544</a>
+                        </p>
+                        <p class="contact-info">Lun - Vie: 9:00 - 20:00</p>
+                        <p class="contact-info">Sáb: 10:00 - 14:00</p>
+                    </article>
+
+                    <!-- Email -->
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email</h3>
+                        <p class="contact-detail">
+                            <a href="mailto:info@olympuscars.es" class="contact-link">info@olympuscars.es</a>
+                        </p>
+                        <p class="contact-detail">
+                            <a href="mailto:ventas@olympuscars.es" class="contact-link">ventas@olympuscars.es</a>
+                        </p>
+                        <p class="contact-info">Respuesta en 24h</p>
+                    </article>
+
+                    <!-- Dirección -->
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Dirección</h3>
+                        <p class="contact-detail">Calle de la Luna, 12</p>
+                        <p class="contact-detail">28004 Madrid, España</p>
+                        <p class="contact-info">Ver en el mapa ↓</p>
+                    </article>
+
+                    <!-- Horario -->
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="contact-title">Horario</h3>
+                        <p class="contact-detail"><strong>Lunes - Viernes</strong></p>
+                        <p class="contact-info">Mañanas: 9:00 - 14:00</p>
+                        <p class="contact-info">Tardes: 17:00 - 20:00</p>
+                        <p class="contact-detail" style="margin-top: 0.5rem;"><strong>Sábados</strong></p>
+                        <p class="contact-info">10:00 - 14:00</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="map-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Encuéntranos
+                    </h2>
+                    <p class="section-description">Nuestro showroom está ubicado en el corazón de Madrid</p>
+                </div>
+
+                <div class="map-container">
+                    <div id="map"></div>
+                    <div class="map-controls">
+                        <button id="centerMapBtn" class="map-btn" title="Centrar mapa">
+                            <i class="fas fa-crosshairs"></i>
+                        </button>
+                        <button id="routeBtn" class="map-btn" title="Calcular ruta">
+                            <i class="fas fa-route"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-info">
+                    <div class="map-info-item">
+                        <i class="fas fa-parking"></i>
+                        <span>Parking gratuito disponible</span>
+                    </div>
+                    <div class="map-info-item">
+                        <i class="fas fa-subway"></i>
+                        <span>Metro: Callao (Líneas 3 y 5)</span>
+                    </div>
+                    <div class="map-info-item">
+                        <i class="fas fa-bus"></i>
+                        <span>Bus: Líneas 1, 2, 46, 75, 146</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-contact">
+                <div class="cta-content">
+                    <h2 class="cta-title">¿Listo para tu próximo vehículo?</h2>
+                    <p class="cta-description">Agenda una cita o visítanos directamente. Nuestro equipo de expertos está listo para asesorarte.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+34955786544" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Llamar Ahora
+                        </a>
+                        <a href="./presupuesto.html" class="btn btn-secondary">
+                            <i class="fas fa-calculator"></i>
+                            Solicitar Presupuesto
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <p>&copy; 2024 Olympus Cars. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTONES FLOTANTES -->
+    <!-- WhatsApp -->
+    <a href="https://wa.me/34955786544?text=Hola,%20me%20interesa%20información%20sobre%20sus%20vehículos" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestra exclusiva colección de vehículos premium. Porsche, Mercedes, BMW, Audi y más marcas de lujo.">
+    <title>Galería de Vehículos | Olympus Cars</title>
+    <link rel="icon" href="../olympus-cars.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-crown"></i>
+                <span class="logo-text">OLYMPUS CARS</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link active">Galería</a></li>
+                <li><a href="./presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO PEQUEÑO -->
+    <header class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Nuestra Colección Exclusiva</h1>
+            <p class="hero-description">Descubre vehículos excepcionales</p>
+            <div class="hero-divider"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- FILTROS DE BÚSQUEDA -->
+            <section class="filters-section">
+                <div class="filters-header">
+                    <h2><i class="fas fa-filter"></i> Filtrar Vehículos</h2>
+                </div>
+                
+                <div class="filters-container">
+                    <!-- Filtro por búsqueda -->
+                    <div class="filter-group">
+                        <label for="searchInput">
+                            <i class="fas fa-search"></i>
+                            Buscar
+                        </label>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="filter-input" 
+                            placeholder="Buscar por nombre o marca...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="marcaFilter">
+                            <i class="fas fa-car"></i>
+                            Marca
+                        </label>
+                        <select id="marcaFilter" class="filter-select">
+                            <option value="">Todas las marcas</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes">Mercedes-Benz</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Aston Martin">Aston Martin</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Bentley">Bentley</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Rolls-Royce">Rolls-Royce</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="tipoFilter">
+                            <i class="fas fa-layer-group"></i>
+                            Tipo
+                        </label>
+                        <select id="tipoFilter" class="filter-select">
+                            <option value="">Todos los tipos</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Deportivo">Deportivo</option>
+                            <option value="Sedan">Sedan</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Botón resetear filtros -->
+                    <div class="filter-group">
+                        <button id="resetFilters" class="btn-reset">
+                            <i class="fas fa-redo"></i>
+                            Resetear
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="results-counter">
+                    <span id="resultsCount">Cargando vehículos...</span>
+                </div>
+            </section>
+
+            <!-- GALERÍA DE VEHÍCULOS -->
+            <section class="gallery-section">
+                <!-- Grid de vehículos (se carga dinámicamente) -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Cargando vehículos...</p>
+                    </div>
+                </div>
+                
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No se encontraron vehículos</h3>
+                    <p>Intenta ajustar los filtros de búsqueda</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" id="closeLightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <button class="lightbox-nav lightbox-prev" id="prevImage">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <button class="lightbox-nav lightbox-next" id="nextImage">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <div class="lightbox-details">
+                    <span id="lightboxBrand"></span>
+                    <span id="lightboxType"></span>
+                    <span id="lightboxPower"></span>
+                </div>
+                <p class="lightbox-price" id="lightboxPrice"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <p>&copy; 2025 Olympus Cars. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/34955786544?text=Hola,%20estoy%20interesado%20en%20los%20vehículos%20de%20Olympus%20Cars" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- BOTÓN SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/galeria.js?v=1"></script>
+</body>
+</html>
+
+
+

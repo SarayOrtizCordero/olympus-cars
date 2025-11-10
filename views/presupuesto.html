@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicita tu presupuesto personalizado en Olympus Cars. Compra, financiación, mantenimiento y más.">
+    <title>Presupuesto | Olympus Cars</title>
+    <link rel="icon" href="../olympus-cars.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-crown"></i>
+                <span class="logo-text">OLYMPUS CARS</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="#" class="nav-link active">Presupuesto</a></li>
+                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO PEQUEÑO -->
+    <header class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Solicita tu Presupuesto</h1>
+            <p class="hero-description">Personaliza tu experiencia premium</p>
+            <div class="hero-divider"></div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL - FORMULARIO -->
+    <main class="main-content">
+        <div class="container">
+            <div class="form-wrapper">
+                <!-- Introducción del formulario -->
+                <div class="form-intro">
+                    <h2>Configura tu Servicio Personalizado</h2>
+                    <p>Completa el formulario para recibir un presupuesto detallado adaptado a tus necesidades</p>
+                </div>
+
+                <!-- Formulario principal -->
+                <form id="presupuestoForm" class="budget-form" novalidate>
+                    
+                    <!-- SECCIÓN 1: DATOS PERSONALES -->
+                    <fieldset class="form-section">
+                        <legend>
+                            <i class="fas fa-user"></i>
+                            Datos Personales
+                        </legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">
+                                    <i class="fas fa-user-circle"></i>
+                                    Nombre <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="nombre" 
+                                    name="nombre" 
+                                    placeholder="Ej: Carlos"
+                                    required
+                                    autocomplete="given-name">
+                                <small class="error-message">El nombre es obligatorio (2-50 caracteres, solo letras)</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="apellidos">
+                                    <i class="fas fa-user-tag"></i>
+                                    Apellidos <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="apellidos" 
+                                    name="apellidos" 
+                                    placeholder="Ej: García López"
+                                    required
+                                    autocomplete="family-name">
+                                <small class="error-message">Los apellidos son obligatorios (2-100 caracteres)</small>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">
+                                    <i class="fas fa-phone"></i>
+                                    Teléfono <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="telefono" 
+                                    name="telefono" 
+                                    placeholder="Ej: 612345678"
+                                    required
+                                    autocomplete="tel">
+                                <small class="error-message">Formato válido: 9 dígitos (ej: 612345678)</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Correo Electrónico <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="Ej: usuario@ejemplo.com"
+                                    required
+                                    autocomplete="email">
+                                <small class="error-message">Introduce un correo electrónico válido</small>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECCIÓN 2: TIPO DE SERVICIO -->
+                    <fieldset class="form-section">
+                        <legend>
+                            <i class="fas fa-cog"></i>
+                            Tipo de Servicio
+                        </legend>
+                        
+                        <div class="form-group full-width">
+                            <label for="servicio">
+                                <i class="fas fa-list"></i>
+                                Selecciona el Servicio <span class="required">*</span>
+                            </label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value="compra" data-precio="0">Compra de Vehículo</option>
+                                <option value="financiacion" data-precio="500">Consultoría de Financiación (€500)</option>
+                                <option value="mantenimiento" data-precio="1200">Servicio de Mantenimiento Premium (€1,200/año)</option>
+                                <option value="personalizacion" data-precio="5000">Personalización Completa (desde €5,000)</option>
+                                <option value="testdrive" data-precio="0">Test Drive Exclusivo (Gratuito)</option>
+                            </select>
+                            <small class="error-message">Debes seleccionar un servicio</small>
+                        </div>
+
+                        <!-- Campo condicional para compra de vehículo -->
+                        <div class="form-group full-width" id="vehiculoGroup" style="display: none;">
+                            <label for="vehiculo">
+                                <i class="fas fa-car"></i>
+                                Vehículo de Interés
+                            </label>
+                            <select id="vehiculo" name="vehiculo">
+                                <option value="">-- Selecciona un vehículo --</option>
+                                <option value="50000">Vehículo Gama Media (desde €50,000)</option>
+                                <option value="100000">Vehículo Gama Alta (desde €100,000)</option>
+                                <option value="200000">Vehículo Exclusivo (desde €200,000)</option>
+                                <option value="300000">Vehículo de Lujo Supremo (desde €300,000)</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECCIÓN 3: DETALLES DEL SERVICIO -->
+                    <fieldset class="form-section">
+                        <legend>
+                            <i class="fas fa-sliders-h"></i>
+                            Detalles del Servicio
+                        </legend>
+                        
+                        <div class="form-group">
+                            <label for="plazo">
+                                <i class="fas fa-calendar-alt"></i>
+                                Plazo/Duración (meses)
+                            </label>
+                            <div class="input-with-display">
+                                <input 
+                                    type="range" 
+                                    id="plazo" 
+                                    name="plazo" 
+                                    min="1" 
+                                    max="60" 
+                                    value="12" 
+                                    step="1">
+                                <span class="range-value" id="plazoValue">12 meses</span>
+                            </div>
+                            <small class="info-message">Influye en el costo total del servicio</small>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="extras-label">
+                                <i class="fas fa-star"></i>
+                                Extras y Personalizaciones
+                            </label>
+                            <div class="extras-grid">
+                                <div class="extra-item">
+                                    <input type="checkbox" id="garantiaExtendida" name="extras" value="2500">
+                                    <label for="garantiaExtendida">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span class="extra-name">Garantía Extendida</span>
+                                        <span class="extra-price">+ €2,500</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="extra-item">
+                                    <input type="checkbox" id="seguroCompleto" name="extras" value="3000">
+                                    <label for="seguroCompleto">
+                                        <i class="fas fa-car-crash"></i>
+                                        <span class="extra-name">Seguro a Todo Riesgo</span>
+                                        <span class="extra-price">+ €3,000/año</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="extra-item">
+                                    <input type="checkbox" id="pinturaCeramica" name="extras" value="1500">
+                                    <label for="pinturaCeramica">
+                                        <i class="fas fa-spray-can"></i>
+                                        <span class="extra-name">Tratamiento Cerámico</span>
+                                        <span class="extra-price">+ €1,500</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="extra-item">
+                                    <input type="checkbox" id="llantas" name="extras" value="4000">
+                                    <label for="llantas">
+                                        <i class="fas fa-compact-disc"></i>
+                                        <span class="extra-name">Llantas Premium</span>
+                                        <span class="extra-price">+ €4,000</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="extra-item">
+                                    <input type="checkbox" id="audioHiFi" name="extras" value="5500">
+                                    <label for="audioHiFi">
+                                        <i class="fas fa-music"></i>
+                                        <span class="extra-name">Sistema Audio Hi-Fi</span>
+                                        <span class="extra-price">+ €5,500</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="extra-item">
+                                    <input type="checkbox" id="tapiceria" name="extras" value="8000">
+                                    <label for="tapiceria">
+                                        <i class="fas fa-couch"></i>
+                                        <span class="extra-name">Tapicería de Lujo</span>
+                                        <span class="extra-price">+ €8,000</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="budget-summary">
+                            <div class="summary-header">
+                                <i class="fas fa-calculator"></i>
+                                <h3>Resumen del Presupuesto</h3>
+                            </div>
+                            <div class="summary-details">
+                                <div class="summary-line">
+                                    <span>Servicio Base:</span>
+                                    <span id="precioBase" class="price">€0</span>
+                                </div>
+                                <div class="summary-line">
+                                    <span>Vehículo:</span>
+                                    <span id="precioVehiculo" class="price">€0</span>
+                                </div>
+                                <div class="summary-line">
+                                    <span>Extras:</span>
+                                    <span id="precioExtras" class="price">€0</span>
+                                </div>
+                                <div class="summary-line total">
+                                    <span>TOTAL ESTIMADO:</span>
+                                    <span id="precioTotal" class="price-total">€0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECCIÓN 4: COMENTARIOS ADICIONALES -->
+                    <fieldset class="form-section">
+                        <legend>
+                            <i class="fas fa-comment-dots"></i>
+                            Información Adicional
+                        </legend>
+                        
+                        <div class="form-group full-width">
+                            <label for="comentarios">
+                                <i class="fas fa-pen"></i>
+                                Comentarios o Consultas
+                            </label>
+                            <textarea 
+                                id="comentarios" 
+                                name="comentarios" 
+                                rows="5" 
+                                placeholder="Cuéntanos más sobre tus necesidades o preferencias..."
+                            ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECCIÓN 5: CONDICIONES Y ENVÍO -->
+                    <fieldset class="form-section">
+                        <legend>
+                            <i class="fas fa-file-contract"></i>
+                            Condiciones y Envío
+                        </legend>
+                        
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacidad" name="privacidad" required>
+                                <label for="privacidad">
+                                    He leído y acepto la 
+                                    <a href="#" target="_blank">Política de Privacidad</a> 
+                                    y los 
+                                    <a href="#" target="_blank">Términos y Condiciones</a>
+                                    <span class="required">*</span>
+                                </label>
+                                <small class="error-message">Debes aceptar la política de privacidad</small>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">
+                                    Deseo recibir información sobre ofertas y novedades de Olympus Cars
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Solicitar Presupuesto
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i>
+                                Reiniciar Formulario
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <p>&copy; 2025 Olympus Cars. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/34955786544?text=Hola,%20quiero%20solicitar%20un%20presupuesto" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>
+
+
+

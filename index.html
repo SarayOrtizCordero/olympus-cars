@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Olympus Cars - Concesionario Premium de vehículos de lujo en Madrid. Descubre nuestra exclusiva selección de Porsche, Mercedes, BMW, Audi y más.">
+    <meta name="keywords" content="coches de lujo, vehículos premium, concesionario Madrid, Porsche, Mercedes-AMG, BMW, Audi">
+    <meta name="author" content="Olympus Cars">
+    <title>Olympus Cars | Concesionario Premium de Vehículos de Lujo en Madrid</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./olympus-cars.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- Navegación principal -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-crown"></i>
+                <span class="logo-text">OLYMPUS CARS</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="./views/galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="./views/presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li><a href="./views/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="hero-subtitle">Bienvenido a</span>
+                OLYMPUS CARS
+            </h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                Experiencia Premium en Vehículos de Lujo
+            </p>
+            <div class="hero-divider" data-aos="fade-up" data-aos-delay="300"></div>
+            <p class="hero-tagline" data-aos="fade-up" data-aos-delay="400">
+                Donde la elegancia se encuentra con el rendimiento
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+                <a href="./views/galeria.html" class="btn btn-primary">
+                    <i class="fas fa-car"></i> Ver Colección
+                </a>
+                <a href="./views/contacto.html" class="btn btn-secondary">
+                    <i class="fas fa-calendar-check"></i> Agendar Cita
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Desliza para explorar</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Sobre Nosotros -->
+        <section class="about-section section-padding" id="nosotros">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Quiénes Somos</span>
+                    <h2 class="section-title">Excelencia en Cada Detalle</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Card 1: Misión -->
+                    <article class="about-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="card-title">Misión y Valores</h3>
+                        <p class="card-description">
+                            Nos esforzamos por brindar un servicio excepcional y honesto a nuestros clientes,
+                            manteniendo la integridad y la calidad en todo lo que hacemos. Cada vehículo representa 
+                            nuestro compromiso con la excelencia.
+                        </p>
+                    </article>
+                    
+                    <!-- Card 2: Visión -->
+                    <article class="about-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="card-title">Nuestra Visión</h3>
+                        <p class="card-description">
+                            Ser el concesionario de referencia en vehículos premium en Madrid y España,
+                            ofreciendo productos y servicios que superen constantemente las expectativas 
+                            de nuestros clientes más exigentes.
+                        </p>
+                    </article>
+                    
+                    <!-- Card 3: Compromiso -->
+                    <article class="about-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="card-title">Nuestro Compromiso</h3>
+                        <p class="card-description">
+                            Proporcionamos la mejor experiencia de compra con una amplia gama de vehículos 
+                            de las marcas más prestigiosas, asesoramiento experto y servicio postventa de 
+                            primera clase.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Estadísticas / Cifras -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-car-side"></i>
+                        <h3 class="stat-number" data-count="500">0</h3>
+                        <p class="stat-label">Vehículos Vendidos</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-users"></i>
+                        <h3 class="stat-number" data-count="350">0</h3>
+                        <p class="stat-label">Clientes Satisfechos</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-star"></i>
+                        <h3 class="stat-number" data-count="15">0</h3>
+                        <p class="stat-label">Años de Experiencia</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-award"></i>
+                        <h3 class="stat-number" data-count="25">0</h3>
+                        <p class="stat-label">Marcas Premium</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Testimonios -->
+        <section class="testimonials-section section-padding" id="testimonios">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Testimonios</span>
+                    <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonio 1 -->
+                    <article class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="testimonial-title">Experiencia Increíble</h3>
+                        <p class="testimonial-text">
+                            "Olympus Cars me ayudó a encontrar el Porsche perfecto para mis necesidades.
+                            El servicio fue excepcional y el equipo demostró un conocimiento profundo de cada modelo.
+                            ¡Sin duda volveré!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Carlos Martínez</p>
+                                <p class="author-role">Empresario</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Testimonio 2 -->
+                    <article class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="testimonial-title">Equipo Profesional</h3>
+                        <p class="testimonial-text">
+                            "El equipo de Olympus Cars demostró un conocimiento experto y una actitud amigable.
+                            Me asesoraron en cada paso del proceso de compra. ¡Definitivamente los recomendaré 
+                            a mis amigos y familiares!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Ana Rodríguez</p>
+                                <p class="author-role">Arquitecta</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Testimonio 3 -->
+                    <article class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="testimonial-title">Excelente Selección</h3>
+                        <p class="testimonial-text">
+                            "Encontré una amplia gama de coches de alta calidad para elegir en Olympus Cars.
+                            La experiencia de compra fue fascinante, desde la primera visita hasta la entrega 
+                            de mi Mercedes-AMG GT."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Javier López</p>
+                                <p class="author-role">Director Financiero</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Galería de Vehículos Destacados -->
+        <section class="featured-cars-section section-padding" id="vehiculos">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Nuestra Colección</span>
+                    <h2 class="section-title">Vehículos Destacados</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-description">
+                        Descubre una selección exclusiva de los vehículos más prestigiosos del mercado
+                    </p>
+                </div>
+                
+                <div class="featured-cars-grid">
+                    <!-- Vehículo 1 -->
+                    <article class="car-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="car-image">
+                            <img src="./assets/images/porsche-cayenne.jpg" alt="Porsche Cayenne" loading="lazy">
+                            <div class="car-badge">Premium</div>
+                            <div class="car-overlay">
+                                <a href="./views/galeria.html" class="btn-view">
+                                    <i class="fas fa-eye"></i> Ver Detalles
+                                </a>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Porsche Cayenne</h3>
+                            <p class="car-category"><i class="fas fa-tag"></i> SUV Premium</p>
+                            <div class="car-features">
+                                <span><i class="fas fa-tachometer-alt"></i> 340 CV</span>
+                                <span><i class="fas fa-cog"></i> Automático</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Vehículo 2 -->
+                    <article class="car-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="car-image">
+                            <img src="./assets/images/bmw-x6.jpg" alt="BMW X6" loading="lazy">
+                            <div class="car-badge">Nuevo</div>
+                            <div class="car-overlay">
+                                <a href="./views/galeria.html" class="btn-view">
+                                    <i class="fas fa-eye"></i> Ver Detalles
+                                </a>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">BMW X6</h3>
+                            <p class="car-category"><i class="fas fa-tag"></i> SUV Deportivo</p>
+                            <div class="car-features">
+                                <span><i class="fas fa-tachometer-alt"></i> 530 CV</span>
+                                <span><i class="fas fa-cog"></i> Automático</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Vehículo 3 -->
+                    <article class="car-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="car-image">
+                            <img src="./assets/images/mercedes-amg-gt.jpg" alt="Mercedes-AMG GT" loading="lazy">
+                            <div class="car-badge">Exclusivo</div>
+                            <div class="car-overlay">
+                                <a href="./views/galeria.html" class="btn-view">
+                                    <i class="fas fa-eye"></i> Ver Detalles
+                                </a>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Mercedes-AMG GT</h3>
+                            <p class="car-category"><i class="fas fa-tag"></i> Deportivo</p>
+                            <div class="car-features">
+                                <span><i class="fas fa-tachometer-alt"></i> 585 CV</span>
+                                <span><i class="fas fa-cog"></i> Automático</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Vehículo 4 -->
+                    <article class="car-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="car-image">
+                            <img src="./assets/images/ford-mustang-gt.jpg" alt="Ford Mustang GT" loading="lazy">
+                            <div class="car-badge">Muscle Car</div>
+                            <div class="car-overlay">
+                                <a href="./views/galeria.html" class="btn-view">
+                                    <i class="fas fa-eye"></i> Ver Detalles
+                                </a>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Ford Mustang GT</h3>
+                            <p class="car-category"><i class="fas fa-tag"></i> Deportivo</p>
+                            <div class="car-features">
+                                <span><i class="fas fa-tachometer-alt"></i> 450 CV</span>
+                                <span><i class="fas fa-cog"></i> Manual/Auto</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Vehículo 5 -->
+                    <article class="car-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="car-image">
+                            <img src="./assets/images/audi-r8-spyder.jpg" alt="Audi R8 Spyder" loading="lazy">
+                            <div class="car-badge">Convertible</div>
+                            <div class="car-overlay">
+                                <a href="./views/galeria.html" class="btn-view">
+                                    <i class="fas fa-eye"></i> Ver Detalles
+                                </a>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Audi R8 Spyder</h3>
+                            <p class="car-category"><i class="fas fa-tag"></i> Superdeportivo</p>
+                            <div class="car-features">
+                                <span><i class="fas fa-tachometer-alt"></i> 570 CV</span>
+                                <span><i class="fas fa-cog"></i> Automático</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Vehículo 6 -->
+                    <article class="car-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="car-image">
+                            <img src="./assets/images/aston-martin-dbx-707.jpg" alt="Aston Martin DBX 707" loading="lazy">
+                            <div class="car-badge">Limited Edition</div>
+                            <div class="car-overlay">
+                                <a href="./views/galeria.html" class="btn-view">
+                                    <i class="fas fa-eye"></i> Ver Detalles
+                                </a>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Aston Martin DBX 707</h3>
+                            <p class="car-category"><i class="fas fa-tag"></i> SUV de Lujo</p>
+                            <div class="car-features">
+                                <span><i class="fas fa-tachometer-alt"></i> 707 CV</span>
+                                <span><i class="fas fa-cog"></i> Automático</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Botón ver más -->
+                <div class="section-footer" data-aos="fade-up">
+                    <a href="./views/galeria.html" class="btn btn-primary-outline">
+                        <i class="fas fa-th"></i> Ver Colección Completa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Noticias y Eventos -->
+        <section class="news-section section-padding" id="noticias">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Actualidad</span>
+                    <h2 class="section-title">Últimas Noticias y Eventos</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-description">
+                        Mantente informado sobre lanzamientos, eventos exclusivos y novedades del mundo automotriz
+                    </p>
+                </div>
+                
+                <!-- Contenedor de noticias dinámicas (cargadas con JavaScript) -->
+                <div class="news-grid" id="noticiasContainer">
+                    <!-- Las noticias se cargarán dinámicamente desde noticias.json -->
+                    <div class="news-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Cargando noticias...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Call to Action (CTA) -->
+        <section class="cta-section">
+            <div class="cta-overlay"></div>
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2 class="cta-title">¿Listo para tu Próximo Vehículo Premium?</h2>
+                    <p class="cta-description">
+                        Agenda una cita con nuestros expertos y descubre la experiencia Olympus Cars
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="./views/presupuesto.html" class="btn btn-gold">
+                            <i class="fas fa-calculator"></i> Solicitar Presupuesto
+                        </a>
+                        <a href="./views/contacto.html" class="btn btn-white-outline">
+                            <i class="fas fa-phone"></i> Contactar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER - Pie de página con información de contacto -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Información de la empresa -->
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <i class="fas fa-crown"></i> Olympus Cars
+                    </h3>
+                    <p class="footer-description">
+                        Tu concesionario de confianza para vehículos premium en Madrid. 
+                        Excelencia, calidad y servicio excepcional desde 2010.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio"><i class="fas fa-angle-right"></i> Inicio</a></li>
+                        <li><a href="./views/galeria.html"><i class="fas fa-angle-right"></i> Galería</a></li>
+                        <li><a href="./views/presupuesto.html"><i class="fas fa-angle-right"></i> Presupuesto</a></li>
+                        <li><a href="./views/contacto.html"><i class="fas fa-angle-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Servicios -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Nuestros Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Compra de Vehículos</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Financiación</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Mantenimiento</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Personalización</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4: Contacto -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Calle de la Luna, 28004 Madrid</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+34 955 78 65 44</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@olympuscars.es</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Vie: 9:00-20:00<br>Sáb: 10:00-14:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Olympus Cars. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/34955786544?text=Hola,%20estoy%20interesado%20en%20los%20vehículos%20de%20Olympus%20Cars" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contactar por WhatsApp"
+       title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- BOTÓN SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- SCRIPTS JAVASCRIPT -->
+    <!-- jQuery (requerido para algunas funcionalidades) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- JavaScript principal -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
